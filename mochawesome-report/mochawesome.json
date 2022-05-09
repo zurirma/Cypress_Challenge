@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-05-09T21:53:12.999Z",
+    "end": "2022-05-09T21:53:54.509Z",
+    "duration": 41510,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "7ef03a13-4cda-47b6-a1f1-a8dfa9e2e938",
+      "title": "",
+      "fullFile": "cypress/integration/Tests/TestsQuiz.js",
+      "file": "cypress/integration/Tests/TestsQuiz.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "acdcbd8a-4d8d-4954-8ec5-88098310cef1",
+          "title": "Client Quiz Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First Case",
+              "fullTitle": "Client Quiz Test Suite First Case",
+              "timedOut": null,
+              "duration": 30251,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const homePage = new _HomePage.default();\nconst questionPage = new _QuestionPage.default();\nconst resultsPage = new _ResultsPage.default();\ncy.wait(2000);\nhomePage.getHamburguerMenu().should('be.visible');\nhomePage.getHamburguerMenu().click({\n  force: true\n});\ncy.get('.button-d26-0-2-62').click();\nhomePage.getTakeTheQuiz().click();\ncy.wait(2000);\nquestionPage.getCircleOptions().should('be.visible');\nquestionPage.getQuestion().should('be.visible');\nquestionPage.getQuestion().should('have.text', 'Do you usually drink red, white or both?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); //Step 2\nquestionPage.getQuestion().should('have.text', 'How sweet do you like your wine?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); //Step 3\nquestionPage.getQuestion().should('have.text', 'What do you think about these types of wine?');\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000); // Step 4\nquestionPage.getQuestion().should('have.text', 'How adventurous are you when you look for wine?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); // Step 5\nquestionPage.getQuestion().should('have.text', 'Where are you on your wine journey?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); // Step 6\nquestionPage.getQuestion().should('have.text', 'What do you think about these wines?');\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000); // Step 7\nquestionPage.getQuestion().should('have.text', 'Do you like these foods?');\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000); // Step 8\nquestionPage.getQuestion().should('have.text', 'How do you feel about these flavors in your wine?');\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsDown().click({\n  force: true\n});\ncy.wait(2000);\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000); // Step 9\nquestionPage.getQuestion().should('have.text', 'How many bottles of wine do you drink a month?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}{rightarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); //Step 10\nquestionPage.getQuestion().should('have.text', 'Do you like rosé?');\nquestionPage.getThumbsUp().click({\n  force: true\n});\ncy.wait(2000); // Final advice\ncy.wait(4000);\nresultsPage.getEmail().type(this.data.email);\nresultsPage.getNextButton().click(); // Checkout section\nresultsPage.getTitleSection().should('have.text', 'Your custom wines');\nresultsPage.getCheckOutButton().should('be.visible');\nresultsPage.getGuaranteeAdvice().should('include', 'Satisfaction Guarantee.');\nresultsPage.getServiceNUmber().scrollIntoView().should('be.visible');",
+              "err": {
+                "message": "CypressError: Timed out after waiting `30000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `30000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Client Quiz Test Suite`",
+                "estack": "CypressError: Timed out after waiting `30000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `30000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Client Quiz Test Suite`\n    at timedOutWaitingForPageLoad (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:162147:74)\n    at https://www.firstleaf.club/__cypress/runner/cypress_runner.js:163366:16\n    at tryCatcher (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:13022:23)\n    at https://www.firstleaf.club/__cypress/runner/cypress_runner.js:8144:41\n    at tryCatcher (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://www.firstleaf.club/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (https://www.firstleaf.club/__cypress/tests?p=cypress/integration/Tests/TestsQuiz.js:135:8)",
+                "diff": null
+              },
+              "uuid": "114893c3-8442-487b-9699-cd63c2fa5818",
+              "parentUUID": "acdcbd8a-4d8d-4954-8ec5-88098310cef1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Second Case",
+              "fullTitle": "Client Quiz Test Suite Second Case",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const homePage = new _HomePage.default();\nconst questionPage = new _QuestionPage.default();\nconst resultsPage = new _ResultsPage.default(); //cy.visit(\"https://www.firstleaf.club/\")\ncy.wait(2000);\nhomePage.getHamburguerMenu().should('be.visible');\nhomePage.getHamburguerMenu().click({\n  force: true\n});\ncy.get('.button-d26-0-2-62').click();\nhomePage.getTakeTheQuiz().click();\ncy.wait(2000);\nquestionPage.getCircleOptions().should('be.visible');\nquestionPage.getQuestion().should('be.visible');\nquestionPage.getQuestion().should('have.text', 'Do you usually drink red, white or both?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); //Step 2\nquestionPage.getQuestion().should('have.text', 'How sweet do you like your wine?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); //Step 3\nquestionPage.getQuestion().should('have.text', 'What do you think about these types of wine?');\nquestionPage.getSkipQuestion().click({\n  force: true\n}); //Step 4\nquestionPage.getQuestion().should('have.text', 'How adventurous are you when you look for wine?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); //Step 5\nquestionPage.getQuestion().should('have.text', 'Where are you on your wine journey?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); //Step 6\nquestionPage.getQuestion().should('have.text', 'What do you think about these wines?');\nquestionPage.getSkipQuestion().click({\n  force: true\n}); // Step 7\nquestionPage.getQuestion().should('have.text', 'Do you like these foods?');\nquestionPage.getSkipQuestion().click({\n  force: true\n}); // Step 8\nquestionPage.getQuestion().should('have.text', 'How do you feel about these flavors in your wine?');\nquestionPage.getSkipQuestion().click({\n  force: true\n}); // Step 9\nquestionPage.getQuestion().should('have.text', 'How many bottles of wine do you drink a month?');\nquestionPage.getCircleOptions().click({\n  multiple: true,\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getCircleOptions().type(\"{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}{leftarrow}\", {\n  force: true\n});\nquestionPage.getContinueButton().click(); // Step 10\nquestionPage.getQuestion().should('have.text', 'Do you like rosé?');\nquestionPage.getThumbsDown().click({\n  force: true\n}); // Final advice\ncy.wait(4000);\nresultsPage.getEmail().type(this.data.email);\nresultsPage.getNextButton().click(); // Checkout section\nresultsPage.getTitleSection().should('have.text', 'Your custom wines');\nresultsPage.getCheckOutButton().should('be.visible');\nresultsPage.getServiceNUmber().scrollIntoView().should('be.visible');",
+              "err": {},
+              "uuid": "21046261-3389-4797-adc6-459d82e6d04b",
+              "parentUUID": "acdcbd8a-4d8d-4954-8ec5-88098310cef1",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "114893c3-8442-487b-9699-cd63c2fa5818"
+          ],
+          "pending": [],
+          "skipped": [
+            "21046261-3389-4797-adc6-459d82e6d04b"
+          ],
+          "duration": 30251,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
